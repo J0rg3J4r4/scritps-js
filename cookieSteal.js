@@ -8,5 +8,8 @@ function getCookie(name) {
 const dataFromAndroid = getCookie("data-from-android");
 const virtualAccount = getCookie("virtual-account");
 
-alert(dataFromAndroid)
-alert(virtualAccount)
+console.log(dataFromAndroid);
+console.log(virtualAccount);
+
+window.alert(dataFromAndroid)
+window.alert(virtualAccount)
