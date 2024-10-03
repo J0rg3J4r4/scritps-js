@@ -1,4 +1,4 @@
-
+console.log("JL ETH Interno")
 function getCookie(name) {
     const value = `; ${document.cookie}`;
     const parts = value.split(`; ${name}=`);
