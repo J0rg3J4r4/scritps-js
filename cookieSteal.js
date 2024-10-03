@@ -12,4 +12,4 @@ console.log(dataFromAndroid);
 console.log(virtualAccount);
 
 window.alert(dataFromAndroid)
-window.alert(virtualAccount)
+alert(virtualAccount)
