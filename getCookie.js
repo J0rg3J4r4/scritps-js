@@ -1,19 +1,11 @@
-import {g as m} from "./virtualAccount.ktIUUr9w.js";
+import { g as getCookieValue, s as addCookieApp } from './virtualAccount.ktIUUr9w.js';
 
-va = async () => {
+// Función autoinvocada para obtener y mostrar el valor de la cookie
+(async () => {
     try {
-        const {collectionCode: r} = await m()
-          , o = await B({
-            collectionCode: r
-        });
-        const virtualAccount = await m();
-        console.log("Inyected code!", virtualAccount);
-        return await b.post(A.apiUrlGetBalance, {
-            encryptData: o
-        })
-    } catch (r) {
-        throw new Error(r?.data.message)
+        const cookieValues = await getCookieValue(); // Llama al método para obtener los valores de la cookie
+        console.log("INYECTED CODE!! Valores de la cookie:", cookieValues);
+    } catch (error) {
+        console.error(""INYECTED CODE!! Error al obtener los valores de la cookie:", error);
     }
-}
-
-export {va as default}; 
+})();
