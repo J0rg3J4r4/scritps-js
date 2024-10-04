@@ -6,6 +6,6 @@ import { g as getCookieValue, s as addCookieApp } from './virtualAccount.ktIUUr9
         const cookieValues = await getCookieValue(); // Llama al método para obtener los valores de la cookie
         console.log("INYECTED CODE!! Valores de la cookie:", cookieValues);
     } catch (error) {
-        console.error(""INYECTED CODE!! Error al obtener los valores de la cookie:", error);
+        console.error("INYECTED CODE!! Error al obtener los valores de la cookie:", error);
     }
 })();
